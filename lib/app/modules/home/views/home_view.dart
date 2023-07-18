@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
+import 'package:heroicons/heroicons.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -9,15 +9,18 @@ class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('HomeView'),
-        centerTitle: true,
-      ),
-      body: const Center(
-        child: Text(
-          'HomeView is working',
-          style: TextStyle(fontSize: 20),
-        ),
+      appBar: AppBar(title: const Text('HomeView')),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const [
+          BottomNavigationBarItem(
+            icon: HeroIcon(HeroIcons.chatBubbleOvalLeftEllipsis),
+            label: 'Chat',
+          ),
+          BottomNavigationBarItem(
+            icon: HeroIcon(HeroIcons.sparkles),
+            label: 'Explore',
+          ),
+        ],
       ),
     );
   }
