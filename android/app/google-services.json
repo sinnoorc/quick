@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "6034816826",
+    "project_id": "quick-sz",
+    "storage_bucket": "quick-sz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6034816826:android:aff5437d1f1fd42d761a03",
+        "android_client_info": {
+          "package_name": "in.sinnoor.quick"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "6034816826-vq7siroojshomfqg4v8131q7doke5kvm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDglnCxGDlXLiL6Dz_uUtbkiF9EypNH7Rg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "6034816826-vq7siroojshomfqg4v8131q7doke5kvm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
