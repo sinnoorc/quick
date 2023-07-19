@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 
 import '../modules/chat/chat.dart';
+import '../modules/discover/discover.dart';
 import '../modules/home/home.dart';
 import '../modules/login/login.dart';
 import '../modules/user/user.dart';
@@ -31,6 +32,11 @@ class AppPages {
       name: _Paths.user,
       page: () => const UserView(),
       binding: UserBinding(),
+    ),
+    GetPage(
+      name: _Paths.discover,
+      page: () => const DiscoverView(),
+      binding: DiscoverBinding(),
     ),
   ];
 }

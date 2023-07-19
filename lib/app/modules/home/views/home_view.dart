@@ -1,27 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:heroicons/heroicons.dart';
 
-import '../controllers/home_controller.dart';
+import '../../chat/chat.dart';
+import '../../discover/discover.dart';
+import '../home.dart';
+import '../widgets/widgets.dart';
 
 class HomeView extends GetView<HomeController> {
   const HomeView({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
+    const body = [
+      ChatView(),
+      DiscoverView(),
+    ];
     return Scaffold(
-      appBar: AppBar(title: const Text('HomeView')),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const [
-          BottomNavigationBarItem(
-            icon: HeroIcon(HeroIcons.chatBubbleOvalLeftEllipsis),
-            label: 'Chat',
-          ),
-          BottomNavigationBarItem(
-            icon: HeroIcon(HeroIcons.sparkles),
-            label: 'Explore',
-          ),
-        ],
-      ),
+      body: Obx(() => body[controller.currentIndex]),
+      bottomNavigationBar: const MyBottomNavigationBar(),
     );
   }
 }
